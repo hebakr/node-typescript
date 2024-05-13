@@ -9,8 +9,8 @@ router.get("/", async (x) => {
   x.body =  {foo: 'bar *********'}
 });
 app.use(router.routes()).use(router.allowedMethods());
-app.listen(3000, async () => {
-  console.log("App running on port 3000...");
+app.listen(80, async () => {
+  console.log("App running on port 80...");
 });
 
 
